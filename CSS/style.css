@@ -1,0 +1,753 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700;800&display=swap');
+:root{
+    /*======== Fonte ========*/
+    --fonte: font-family: 'Poppins', sans-serif;
+
+    /*======== Fonte weight ========*/
+
+    --fonte-regular: 400;
+    --fonte-medium: 500;
+    --fonte-bold: 700;
+
+    /*========= Cores =========*/
+    --cor-principal-verde: #03A64A;
+    --cor-secundaria-marro-s: #261608;
+    --cor-terciaria-branco: #fff;
+
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    transform: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 4rem;
+}
+
+html::-webkit-scrollbar{
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+  
+html::-webkit-scrollbar-thumb{
+    background: var(--cor-principal-verde);
+    border-radius: 5rem;
+}
+
+
+section{
+    padding: 8rem 7%;
+}
+
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    color: var(--cor-principal-verde);
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    padding: 1.2rem 0;
+}
+
+.btn{
+    font-size: 1.7rem;
+    display: inline-block;
+    background: var(--cor-principal-verde);
+    color: var(--cor-terciaria-branco);
+    box-shadow: var(--box-shadow);
+    border-radius: 5rem;
+    padding: 0.9rem 3rem;
+    margin-top: 1rem;
+    z-index: 0;
+    position: relative;
+    overflow: hidden;
+  }
+
+
+/*======== cabeçalho ========*/
+/*.btn-whats{
+    font-size: 1.7rem;
+    display: inline-block;
+    background: #25D366;
+    color: var(--cor-terciaria-branco);
+    box-shadow: var(--box-shadow);
+    border-radius: 5rem;
+    padding: 2.9rem 16rem;
+    margin-bottom: -78rem;
+    margin-left: 4rem;
+    z-index: 0;
+    position: relative;
+    overflow: hidden;
+}*/
+.Whatsapp{
+    position: fixed;
+    width: 272px;
+    height: 47px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #03A64A;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 1000;
+}
+
+.header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    background: var(--cor-terciaria-branco);
+    box-shadow: var(--box-shadow);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+}
+
+.header .nav-logo{
+    width: 5rem;
+}
+
+.header .navbar a{
+    font-size: 1.7rem;
+    color: var(--cor-secundaria-marro-s);
+    margin: 0 1rem;
+}
+
+.header .navbar a:hover{
+    color: var(--cor-principal-verde);
+}
+
+.header .nav-logo img{
+    max-width: 85px;
+    height: auto;
+}
+
+
+.header .icons div{
+    font-size: 2.5rem;
+    margin-left: 1.7rem;
+    cursor: pointer;
+}
+
+.header .icons div:hover{
+    color: var(--cor-principal-verde);
+}
+
+#menu-btn{
+    display: none;
+}
+
+  
+/*======== Fim ========*/
+
+/*======= Inicio/Home =======*/
+/*.Inicio{
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    background: url(../img/Banner1-Equilab-seu-laboratorio-de-analises.jpg) no-repeat;
+    background-size: cover;
+    background-position: top;  
+}*/
+/*Slides*/
+section.Inicio{
+    padding: 0 !important;
+}
+.Inicio .slider{
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.slides{
+    width: 400%;
+    height: auto;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slides .slide{
+    width: 25%;
+    height: auto;
+    position: relative;
+
+}
+
+.slide img{
+    width: 100%;
+}
+
+.manual-nav, .nav-auto{
+    position: absolute;
+    width: 100%;
+    margin-top: -4%;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-nav .manual-btn,
+.nav-auto div{
+    border: 1px solid var(--cor-secundaria-marro-s);
+    padding: 5px;
+    border-radius: 50%;
+    cursor:pointer;
+    transition: 0.5s;
+}
+
+.manual-nav .manual-btn:not(:last-child),
+.nav-auto div:not(:last-child){
+    margin-right: 10px;
+}
+
+.manual-nav .manual-btn:hover{
+    background-color: var(--cor-principal-verde);
+}
+
+#radio1:checked ~ .nav-auto .auto-btn1, #radio2:checked ~ .nav-auto .auto-btn2, #radio3:checked ~ .nav-auto .auto-btn3, #radio4:checked ~ .nav-auto .auto-btn4{
+    background-color: yellow;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+
+/*Slides*/
+
+.Inicio .content{
+    max-width: 60rem;
+    position: absolute;
+}
+
+.Inicio .content h3{
+    color: var(--cor-principal-verde);
+    font-size: 6rem;
+    line-height: 1;
+    font-weight: var(--fonte-bold);
+    margin-top: 50rem;
+    margin-left: 3rem;
+   
+}
+
+/*======= Fim =======*/
+
+/*======= Sobre Nós =======*/
+.Sobre .box-container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6rem;
+    padding: 8rem 7%;
+}
+
+.Sobre .titulo-sobre{
+    font-size: 10rem;
+    font-weight: 700;
+    white-space: nowrap;
+    line-height: 0.5;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px var(--cor-principal-verde);
+    transform-origin: top left;
+    transform: rotate(0.25turn);
+    position: relative;
+    top: 115%;
+    left: 48%;
+    z-index: -1;
+}
+
+.Sobre .box-container .imagem{
+    flex: 1 1 31rem;
+    position: relative;
+    margin-top: -13rem;
+    margin-left: auto;
+}
+
+.Sobre .box-container .imagem img{
+    width: 484px;
+}
+
+.Sobre .content{
+    flex: 1 1 41rem;
+}
+
+.Sobre .content .titulo{
+    font-size: 3rem;
+    color: black;
+    margin-top: -16rem;
+}
+
+.Sobre .content p{
+    font-size: 1.5rem;
+    text-align: justify;
+    color: #444;
+    padding: 1rem 0;
+    line-height: 2;
+}
+
+.Sobre .content .icons-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    margin-top: 3rem;
+}
+
+.Sobre .content .icons-container .icons:hover{
+    transform: scale(1.1);
+}
+  
+.Sobre .content .icons-container .icons{
+    flex: 1 1 16rem;
+    text-align: center;
+    background: var(--cor-terciaria-branco);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+    padding: 3rem 2rem;
+    border-radius: 1rem;
+}
+  
+.Sobre .content .icons-container .icons .uil{
+    height: 5rem;
+    font-size: 4rem;
+    color: var(--cor-principal-verde);
+}
+  
+.Sobre .content .icons-container .icons h3{
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    color: var(--cor-principal-verde);
+    font-weight: normal;
+}
+/*======= Fim =======*/
+
+
+/* Analises/serviços*/
+.Analises{
+    background: #e6e2e246;
+    display: block;
+    padding: 5em;
+    margin-top: -10rem;
+}
+.analises-container{
+    padding: 10px 19rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.analises-container .boxcard{
+    margin-top: auto;
+    width: 255px;
+    height: 527px;
+    box-shadow: var(--box-shadow);
+}
+
+.analises-container .boxcard img{
+    border-radius: 0.5rem;
+    margin: auto;
+    margin-top: 0.5rem;
+    display: block;
+}
+.analises-container .boxcard h1{
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--cor-principal-verde);
+    text-transform: uppercase;
+    flex-wrap: wrap;
+}
+
+.analises-container .boxcard p{
+    padding: 10px;
+    color: #444;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.analises-container .boxcard:hover{
+    transform: scale(1.1);
+}
+
+/*fim*/
+
+/*======= Parceiros =======*/
+
+.Parceiros .parceirosimg, .parc{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Parceiros .parceirosimg img{
+    width: 60%;
+}
+
+/*======= Fim =======*/
+
+/*======= contato =======*/
+/*
+.contact{
+    background: var(--cor-secundaria-marro-s);
+}
+  
+.contact form{
+    padding: 2rem 10%;
+    text-align: center;
+}
+  
+.contact form .inputBox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+  
+.contact form .inputBox input,
+.contact form textarea{
+    font-size: 1.7rem;
+    width: 49%;
+    padding: 1rem 2rem;
+    margin: 1rem 0;
+    border-radius: .5rem;
+    text-transform: none;
+}
+  
+.contact form .inputBox input::placeholder,
+.contact form textarea::placeholder{
+    text-transform: capitalize;
+}
+  
+.contact form textarea{
+    height: 15rem;
+    resize: none;
+    width: 100%;
+}*/
+.contact{
+    background: url(../img/atendimento.png) no-repeat;
+    background-position: center center;
+    background-size: 100% auto;
+}
+
+.form-contato{
+    background: #025c29;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: var(--fonte);
+    padding: 30px 30px 12px 30px;
+    width: 37%;
+    margin-bottom: 11rem;
+    border-radius: 1.5rem;
+}
+
+.formcontact{
+    width: 100%;
+    max-width: 32rem;
+    font-size: 1.125rem;
+}
+.form-contato h1{
+    color: #fff;
+    font-family: var(--fonte);
+    font-size: 4rem;
+
+}
+
+.form-contato p{
+    text-align: center;
+    font-family: var(--fonte);
+    font-size: 1.5rem;
+    color:#fff;
+    font-weight: var(--fonte-medium);
+}
+
+.formcontact label,
+.formcontact input,
+.formcontact textarea,
+.formcontact button{
+    display: block;
+    width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.formcontact label{
+    display: none;
+    line-height: 1;
+}
+
+.formcontact input,
+.formcontact textarea{
+    font: inherit;
+    padding: 0.8rem;
+    border: 1px solid transparent;
+    border-radius: 3px;
+}
+
+.formcontact textarea{
+    min-height: 13rem;
+    min-width: 32rem;
+    resize: none;
+}
+.formcontact input:hover,
+.formcontact input:focus,
+.formcontact textarea:hover,
+.formcontact textarea:focus{
+    border-color: #0d0d0d3b;
+}
+
+.formcontact button{
+    margin-top: 5px;
+    display: block;
+    padding: 1rem;
+    background: var(--cor-principal-verde);
+    color: #fff;
+    font: inherit;
+    text-transform: uppercase;
+    width: 32rem;
+    border-radius: 3px;
+    cursor: pointer;
+}
+/*======= Fim =======*/
+.footer{
+    background: #0d0d0dd3 ;
+    background-size: cover;
+    padding: 3rem 7%;
+}
+  
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+  
+.footer .box-container .box h3{
+    font-size: 2.5rem;
+    color: var(--cor-principal-verde);
+    padding: 1rem 0;
+}
+  
+.footer .box-container .box p{
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: var(--cor-terciaria-branco);
+    padding: 1rem 0;
+}
+
+.footer .box-container .box img{
+    width: 50%;
+}
+  
+.footer .box-container .box .links{
+    display: block;
+    font-size: 1.5rem;
+    color: var(--cor-terciaria-branco);
+    padding: 1rem 0;
+}
+  
+.footer .box-container .box .links i{
+    color: var(--cor-principal-verde);
+    padding-right: .5rem;
+}
+  
+.footer .box-container .box .links:hover i{
+    padding-right: 2rem;
+}
+  
+.footer .box-container .box .days{
+    margin-left: 2.2rem;
+    line-height: .2;
+}
+  
+.footer .box-container .box .email{
+    width: 100%;
+    margin: .7rem 0;
+    padding: 1rem;
+    border-radius: .5rem;
+    background: var(--cor-terciaria-branco);
+    font-size: 1.6rem;
+    color: black;
+    text-transform: none;
+}
+  
+.footer .box-container .box .share a{
+    display: inline-block;
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    color: #fff;
+    background: var(--cor-principal-verde);
+    font-size: 2rem;
+    border-radius: 50%;
+    margin-right: .8rem;
+    margin-left: 4px;
+    text-align: center;
+    margin-top: 1.4rem;
+}
+  
+.footer .box-container .box .share a:hover{
+    background: var(--cor-principal-verde);
+}
+  
+.footer .credit{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 2.5rem;
+    color: var(--cor-terciaria-branco);
+    border-top: .2rem solid rgba(0, 0, 0, 0.2);
+}
+  
+.footer .credit .link{
+    color: var(--cor-principal-verde);}
+/*======= media queries =======*/
+@media(max-width: 991px){
+    html{
+      font-size: 50%;
+    }
+    .header{
+      padding: 2rem;
+    }
+    section{
+      padding: 8rem 2rem;
+    }
+    .Sobre .titulo-sobre{
+        display: none;
+    }
+    .Sobre .box-container .imagem img {
+        width:296px;
+    }
+   
+    .Sobre{
+        display: block;
+        justify-content: space-evenly;
+    }
+}
+
+@media (max-width: 772px){
+    #menu-btn{
+        display: inline-block;
+    }
+
+    .header .navbar{
+        position: absolute;
+        top: 99%;
+        left: 0; right: 0;
+        background: var(--cor-terciaria-branco);
+        border-top: .1rem solid var(--cor-principal-verde);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .header .navbar.active{
+        clip-path: polygon( 0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .header .navbar a{
+        display: block;
+        margin: 2rem;
+        font-size: 2rem;
+    }
+
+    .Inicio{
+        background-position: left;
+    }
+    
+    .Inicio .content h3{
+        position: relative;
+        margin-bottom: 21rem;
+        font-size: 5rem;
+    }
+
+    .Sobre .box-container .imagem img {
+        width: 279px;
+        margin-top: 11rem;
+        margin-right: 25%;
+        margin-bottom: 11rem;
+        margin-left: 25%;
+    }
+    .btn-whats{
+        margin-bottom: -59rem;
+        padding: 3rem 6rem;
+    }
+
+    .titulo-sobre{
+        display: none;
+    }
+    .Analises .analises-container{
+        padding: 12rem 3rem;
+    }
+
+    .contact {
+       background: none;
+       padding: 0;
+    }
+    .contact .form-contato{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 414px){
+    html{
+       font-size: 55%;
+    }
+
+    section {
+        padding: 2rem 1rem;
+    }
+    .header .nav-logo img{
+        max-width: 100%;
+        height: auto;
+    }
+
+    .Sobre .box-container .imagem img {
+        margin-left: 3%;
+        margin-top: 1rem;
+        margin-bottom: 5rem;
+    }
+    .Analises .analises-container {
+        padding: 3rem 3rem;
+    }
+
+    .Inicio .content h3{
+        font-size: 4rem;
+    }
+    .Sobre .box-container .imagem{
+        margin-top: -10rem;
+        margin-left: auto;
+        display: block;
+    }
+    .Sobre .box-container .imagem img{
+        width: 100%;
+        align-items: center;
+    }
+    .Sobre .box-container .content{
+        margin-top: 5rem;
+    }
+
+}
