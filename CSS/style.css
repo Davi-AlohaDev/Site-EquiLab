@@ -72,24 +72,9 @@ section{
     z-index: 0;
     position: relative;
     overflow: hidden;
-  }
-
+}
 
 /*======== cabeçalho ========*/
-/*.btn-whats{
-    font-size: 1.7rem;
-    display: inline-block;
-    background: #25D366;
-    color: var(--cor-terciaria-branco);
-    box-shadow: var(--box-shadow);
-    border-radius: 5rem;
-    padding: 2.9rem 16rem;
-    margin-bottom: -78rem;
-    margin-left: 4rem;
-    z-index: 0;
-    position: relative;
-    overflow: hidden;
-}*/
 .Whatsapp{
     position: fixed;
     width: 272px;
@@ -151,22 +136,14 @@ section{
     display: none;
 }
 
-  
 /*======== Fim ========*/
 
 /*======= Inicio/Home =======*/
-/*.Inicio{
-    min-height: 150px;
-    display: flex;
-    align-items: center;
-    background: url(../img/Banner1-Equilab-seu-laboratorio-de-analises.jpg) no-repeat;
-    background-size: cover;
-    background-position: top;  
-}*/
 /*Slides*/
 section.Inicio{
     padding: 0 !important;
 }
+
 .Inicio .slider{
     margin: 0 auto;
     width: 100%;
@@ -241,7 +218,7 @@ section.Inicio{
     margin-left: -75%;
 }
 
-/*Slides*/
+/*Slides fim*/
 
 .Inicio .content{
     max-width: 60rem;
@@ -348,7 +325,6 @@ section.Inicio{
 }
 /*======= Fim =======*/
 
-
 /* Analises/serviços*/
 .Analises{
     background: #e6e2e246;
@@ -356,17 +332,18 @@ section.Inicio{
     padding: 5em;
     margin-top: -10rem;
 }
+
 .analises-container{
-    padding: 10px 19rem;
+    padding: -5px 24rem;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .analises-container .boxcard{
     margin-top: auto;
-    width: 255px;
-    height: 527px;
+    width: 300px;
+    height: 567px;
     box-shadow: var(--box-shadow);
 }
 
@@ -376,6 +353,7 @@ section.Inicio{
     margin-top: 0.5rem;
     display: block;
 }
+
 .analises-container .boxcard h1{
     text-align: center;
     font-size: 1.5rem;
@@ -395,6 +373,47 @@ section.Inicio{
     transform: scale(1.1);
 }
 
+.analises-container2{
+    margin-top: 3rem;
+    padding: -5px 24rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.analises-container2 .boxcard2{
+    margin-top: auto;
+    width: 300px;
+    height: 567px;
+    box-shadow: var(--box-shadow);
+}
+
+.analises-container2 .boxcard2 img{
+    border-radius: 0.5rem;
+    margin: auto;
+    margin-top: 0.5rem;
+    display: block;
+}
+
+.analises-container2 .boxcard2 h1{
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--cor-principal-verde);
+    text-transform: uppercase;
+    flex-wrap: wrap;
+}
+
+.analises-container2 .boxcard2 p{
+    padding: 10px;
+    color: #444;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.analises-container2 .boxcard2:hover{
+    transform: scale(1.1);
+}
+
 /*fim*/
 
 /*======= Parceiros =======*/
@@ -411,42 +430,6 @@ section.Inicio{
 /*======= Fim =======*/
 
 /*======= contato =======*/
-/*
-.contact{
-    background: var(--cor-secundaria-marro-s);
-}
-  
-.contact form{
-    padding: 2rem 10%;
-    text-align: center;
-}
-  
-.contact form .inputBox{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-  
-.contact form .inputBox input,
-.contact form textarea{
-    font-size: 1.7rem;
-    width: 49%;
-    padding: 1rem 2rem;
-    margin: 1rem 0;
-    border-radius: .5rem;
-    text-transform: none;
-}
-  
-.contact form .inputBox input::placeholder,
-.contact form textarea::placeholder{
-    text-transform: capitalize;
-}
-  
-.contact form textarea{
-    height: 15rem;
-    resize: none;
-    width: 100%;
-}*/
 .contact{
     background: url(../img/atendimento.png) no-repeat;
     background-position: center center;
@@ -471,6 +454,7 @@ section.Inicio{
     max-width: 32rem;
     font-size: 1.125rem;
 }
+
 .form-contato h1{
     color: #fff;
     font-family: var(--fonte);
@@ -514,6 +498,7 @@ section.Inicio{
     min-width: 32rem;
     resize: none;
 }
+
 .formcontact input:hover,
 .formcontact input:focus,
 .formcontact textarea:hover,
@@ -630,15 +615,19 @@ section.Inicio{
     html{
       font-size: 50%;
     }
+
     .header{
       padding: 2rem;
     }
+
     section{
       padding: 8rem 2rem;
     }
+
     .Sobre .titulo-sobre{
         display: none;
     }
+
     .Sobre .box-container .imagem img {
         width:296px;
     }
@@ -652,6 +641,13 @@ section.Inicio{
 @media (max-width: 772px){
     #menu-btn{
         display: inline-block;
+    }
+
+    .Whatsapp{
+        position: fixed;
+        width: 139px;
+        height: 25px;
+        font-size: 15px;
     }
 
     .header .navbar{
@@ -690,6 +686,7 @@ section.Inicio{
         margin-bottom: 11rem;
         margin-left: 25%;
     }
+
     .btn-whats{
         margin-bottom: -59rem;
         padding: 3rem 6rem;
@@ -698,14 +695,92 @@ section.Inicio{
     .titulo-sobre{
         display: none;
     }
-    .Analises .analises-container{
-        padding: 12rem 3rem;
+   
+    .analises-container{
+        padding: 0 25rem;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    
+    .analises-container .boxcard{
+        margin-top: auto;
+        width: 148px;
+        height: 269px;
+        box-shadow: var(--box-shadow);
+    }
+
+    .analises-container .boxcard img{
+        width: 90%;
+        border-radius: 0.5rem;
+        margin: auto;
+        margin-top: 0.5rem;
+        display: block;
+    }
+
+    .analises-container .boxcard h1{
+        text-align: center;
+        font-size: 1.5rem;
+        color: var(--cor-principal-verde);
+        text-transform: uppercase;
+        flex-wrap: wrap;
+    }
+
+    .analises-container .boxcard p{
+        padding: 5px;
+        color: #444;
+        font-size: 0.9rem;
+        text-align: center; 
+    }
+
+    .Analises .analises-container2 {
+        padding: 1rem 1rem;
+    }
+
+    .analises-container2{
+        padding: 0 25rem;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    
+    .analises-container2 .boxcard2{
+        margin-top: auto;
+        width: 148px;
+        height: 269px;
+        box-shadow: var(--box-shadow);
+    }
+
+    .analises-container2 .boxcard2 img{
+        width: 90%;
+        border-radius: 0.5rem;
+        margin: auto;
+        margin-top: 0.5rem;
+        display: block;
+    }
+
+    .analises-container2 .boxcard2 h1{
+        text-align: center;
+        font-size: 1.5rem;
+        color: var(--cor-principal-verde);
+        text-transform: uppercase;
+        flex-wrap: wrap;
+    }
+
+    .analises-container2 .boxcard2 p{
+        padding: 5px;
+        color: #444;
+        font-size: 0.9rem;
+        text-align: center; 
     }
 
     .contact {
        background: none;
        padding: 0;
     }
+
     .contact .form-contato{
         width: 100%;
         height: 100%;
@@ -714,12 +789,20 @@ section.Inicio{
 
 @media (max-width: 414px){
     html{
-       font-size: 55%;
+       font-size: 50%;
     }
 
-    section {
-        padding: 2rem 1rem;
+    section{ 
+        padding: 5rem 6rem; 
     }
+
+    .Whatsapp{
+        position: fixed;
+        width: 139px;
+        height: 25px;
+        font-size: 15px;
+    }
+
     .header .nav-logo img{
         max-width: 100%;
         height: auto;
@@ -730,8 +813,88 @@ section.Inicio{
         margin-top: 1rem;
         margin-bottom: 5rem;
     }
+
     .Analises .analises-container {
-        padding: 3rem 3rem;
+        padding: 1rem 0rem;
+    }
+
+    .analises-container{
+        padding: 0 25rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    
+    .analises-container .boxcard{
+        margin-top: auto;
+        width: 95px;
+        height: 223px;
+        box-shadow: var(--box-shadow);
+    }
+
+    .analises-container .boxcard img{
+        width: 90%;
+        border-radius: 0.5rem;
+        margin: auto;
+        margin-top: 0.5rem;
+        display: block;
+    }
+
+    .analises-container .boxcard h1{
+        text-align: center;
+        font-size: 0.8rem;
+        color: var(--cor-principal-verde);
+        text-transform: uppercase;
+        flex-wrap: wrap;
+    }
+
+    .analises-container .boxcard p{
+        padding: 5px;
+        color: #444;
+        font-size: 0.5rem;
+        text-align: center; 
+    }
+    
+    .Analises .analises-container2 {
+            padding: 1rem 0rem;
+    }
+
+    .analises-container2{
+        padding: 0 25rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .analises-container2 .boxcard2{
+        margin-top: auto;
+        width: 95px;
+        height: 223px;
+        box-shadow: var(--box-shadow);
+    }
+
+    .analises-container2 .boxcard2 img{
+        width: 90%;
+        border-radius: 0.5rem;
+        margin: auto;
+        margin-top: 0.5rem;
+        display: block;
+    }
+
+    .analises-container2 .boxcard2 h1{
+        text-align: center;
+        font-size: 0.8rem;
+        color: var(--cor-principal-verde);
+        text-transform: uppercase;
+        flex-wrap: wrap;
+    }
+
+    .analises-container2 .boxcard2 p{
+        padding: 5px;
+        color: #444;
+        font-size: 0.7rem;
+        text-align: center; 
     }
 
     .Inicio .content h3{
