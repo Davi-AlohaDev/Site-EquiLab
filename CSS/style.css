@@ -638,7 +638,7 @@ section.Inicio{
     }
 }
 
-@media (max-width: 772px){
+@media (max-width: 700px){
     #menu-btn{
         display: inline-block;
     }
@@ -787,13 +787,13 @@ section.Inicio{
     }
 }
 
-@media (max-width: 414px){
+@media (max-width: 691px){
     html{
        font-size: 50%;
     }
 
     section{ 
-        padding: 5rem 6rem; 
+        padding: 3rem 7rem; 
     }
 
     .Whatsapp{
@@ -806,6 +806,10 @@ section.Inicio{
     .header .nav-logo img{
         max-width: 100%;
         height: auto;
+    }
+
+    .Sobre{
+        padding: 2rem 5rem;
     }
 
     .Sobre .box-container .imagem img {
@@ -829,7 +833,7 @@ section.Inicio{
     .analises-container .boxcard{
         margin-top: auto;
         width: 95px;
-        height: 223px;
+        height: 235px;
         box-shadow: var(--box-shadow);
     }
 
@@ -852,7 +856,7 @@ section.Inicio{
     .analises-container .boxcard p{
         padding: 5px;
         color: #444;
-        font-size: 0.5rem;
+        font-size: 0.8rem;
         text-align: center; 
     }
     
@@ -870,7 +874,7 @@ section.Inicio{
     .analises-container2 .boxcard2{
         margin-top: auto;
         width: 95px;
-        height: 223px;
+        height: 235px;
         box-shadow: var(--box-shadow);
     }
 
@@ -893,24 +897,32 @@ section.Inicio{
     .analises-container2 .boxcard2 p{
         padding: 5px;
         color: #444;
-        font-size: 0.7rem;
+        font-size: 0.8rem;
         text-align: center; 
     }
 
     .Inicio .content h3{
         font-size: 4rem;
     }
+
     .Sobre .box-container .imagem{
         margin-top: -10rem;
         margin-left: auto;
         display: block;
     }
+
     .Sobre .box-container .imagem img{
         width: 100%;
         align-items: center;
     }
+
     .Sobre .box-container .content{
         margin-top: 5rem;
     }
+
+    .Parceiros .parceirosimg img{
+        width: 100%;
+    }
+    
 
 }
