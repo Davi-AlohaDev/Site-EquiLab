@@ -356,7 +356,7 @@ section.Inicio{
 
 .analises-container .boxcard h1{
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: var(--cor-principal-verde);
     text-transform: uppercase;
     flex-wrap: wrap;
@@ -378,7 +378,7 @@ section.Inicio{
     padding: -5px 24rem;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .analises-container2 .boxcard2{
@@ -397,7 +397,7 @@ section.Inicio{
 
 .analises-container2 .boxcard2 h1{
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: var(--cor-principal-verde);
     text-transform: uppercase;
     flex-wrap: wrap;
@@ -638,7 +638,7 @@ section.Inicio{
     }
 }
 
-@media (max-width: 700px){
+@media (max-width: 772px){
     #menu-btn{
         display: inline-block;
     }
@@ -696,86 +696,6 @@ section.Inicio{
         display: none;
     }
    
-    .analises-container{
-        padding: 0 25rem;
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-    }
-
-    
-    .analises-container .boxcard{
-        margin-top: auto;
-        width: 148px;
-        height: 269px;
-        box-shadow: var(--box-shadow);
-    }
-
-    .analises-container .boxcard img{
-        width: 90%;
-        border-radius: 0.5rem;
-        margin: auto;
-        margin-top: 0.5rem;
-        display: block;
-    }
-
-    .analises-container .boxcard h1{
-        text-align: center;
-        font-size: 1.5rem;
-        color: var(--cor-principal-verde);
-        text-transform: uppercase;
-        flex-wrap: wrap;
-    }
-
-    .analises-container .boxcard p{
-        padding: 5px;
-        color: #444;
-        font-size: 0.9rem;
-        text-align: center; 
-    }
-
-    .Analises .analises-container2 {
-        padding: 1rem 1rem;
-    }
-
-    .analises-container2{
-        padding: 0 25rem;
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-    }
-
-    
-    .analises-container2 .boxcard2{
-        margin-top: auto;
-        width: 148px;
-        height: 269px;
-        box-shadow: var(--box-shadow);
-    }
-
-    .analises-container2 .boxcard2 img{
-        width: 90%;
-        border-radius: 0.5rem;
-        margin: auto;
-        margin-top: 0.5rem;
-        display: block;
-    }
-
-    .analises-container2 .boxcard2 h1{
-        text-align: center;
-        font-size: 1.5rem;
-        color: var(--cor-principal-verde);
-        text-transform: uppercase;
-        flex-wrap: wrap;
-    }
-
-    .analises-container2 .boxcard2 p{
-        padding: 5px;
-        color: #444;
-        font-size: 0.9rem;
-        text-align: center; 
-    }
-
     .contact {
        background: none;
        padding: 0;
@@ -787,7 +707,7 @@ section.Inicio{
     }
 }
 
-@media (max-width: 691px){
+@media (max-width: 414px){
     html{
        font-size: 50%;
     }
@@ -816,89 +736,6 @@ section.Inicio{
         margin-left: 3%;
         margin-top: 1rem;
         margin-bottom: 5rem;
-    }
-
-    .Analises .analises-container {
-        padding: 1rem 0rem;
-    }
-
-    .analises-container{
-        padding: 0 25rem;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-    }
-
-    
-    .analises-container .boxcard{
-        margin-top: auto;
-        width: 95px;
-        height: 235px;
-        box-shadow: var(--box-shadow);
-    }
-
-    .analises-container .boxcard img{
-        width: 90%;
-        border-radius: 0.5rem;
-        margin: auto;
-        margin-top: 0.5rem;
-        display: block;
-    }
-
-    .analises-container .boxcard h1{
-        text-align: center;
-        font-size: 0.8rem;
-        color: var(--cor-principal-verde);
-        text-transform: uppercase;
-        flex-wrap: wrap;
-    }
-
-    .analises-container .boxcard p{
-        padding: 5px;
-        color: #444;
-        font-size: 0.8rem;
-        text-align: center; 
-    }
-    
-    .Analises .analises-container2 {
-            padding: 1rem 0rem;
-    }
-
-    .analises-container2{
-        padding: 0 25rem;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-    }
-
-    .analises-container2 .boxcard2{
-        margin-top: auto;
-        width: 95px;
-        height: 235px;
-        box-shadow: var(--box-shadow);
-    }
-
-    .analises-container2 .boxcard2 img{
-        width: 90%;
-        border-radius: 0.5rem;
-        margin: auto;
-        margin-top: 0.5rem;
-        display: block;
-    }
-
-    .analises-container2 .boxcard2 h1{
-        text-align: center;
-        font-size: 0.8rem;
-        color: var(--cor-principal-verde);
-        text-transform: uppercase;
-        flex-wrap: wrap;
-    }
-
-    .analises-container2 .boxcard2 p{
-        padding: 5px;
-        color: #444;
-        font-size: 0.8rem;
-        text-align: center; 
     }
 
     .Inicio .content h3{
