@@ -343,7 +343,7 @@ section.Inicio{
 .analises-container .boxcard{
     margin-top: auto;
     width: 300px;
-    height: 567px;
+    height: 447px;
     box-shadow: var(--box-shadow);
 }
 
@@ -384,7 +384,7 @@ section.Inicio{
 .analises-container2 .boxcard2{
     margin-top: auto;
     width: 300px;
-    height: 567px;
+    height: 447px;
     box-shadow: var(--box-shadow);
 }
 
@@ -458,7 +458,7 @@ section.Inicio{
 .form-contato h1{
     color: #fff;
     font-family: var(--fonte);
-    font-size: 4rem;
+    font-size: 3.5rem;
 
 }
 
@@ -618,6 +618,10 @@ section.Inicio{
 
     .header{
       padding: 2rem;
+    }
+
+    .heading{
+        font-size: 3rem;
     }
 
     section{
