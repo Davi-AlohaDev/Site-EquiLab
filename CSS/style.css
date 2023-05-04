@@ -246,22 +246,6 @@ section.Inicio{
     padding: 8rem 7%;
 }
 
-.Sobre .titulo-sobre{
-    font-size: 10rem;
-    font-weight: 700;
-    white-space: nowrap;
-    line-height: 0.5;
-    color: transparent;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 1px var(--cor-principal-verde);
-    transform-origin: top left;
-    transform: rotate(0.25turn);
-    position: relative;
-    top: 115%;
-    left: 48%;
-    z-index: -1;
-}
-
 .Sobre .box-container .imagem{
     flex: 1 1 31rem;
     position: relative;
@@ -278,8 +262,8 @@ section.Inicio{
 }
 
 .Sobre .content .titulo{
-    font-size: 3rem;
-    color: black;
+    font-size: 5rem;
+    color: var(--cor-principal-verde);
     margin-top: -16rem;
 }
 
@@ -424,7 +408,7 @@ section.Inicio{
 }
 
 .Parceiros .parceirosimg img{
-    width: 60%;
+    width: 100%;
 }
 
 /*======= Fim =======*/
@@ -458,8 +442,7 @@ section.Inicio{
 .form-contato h1{
     color: #fff;
     font-family: var(--fonte);
-    font-size: 3.5rem;
-
+    font-size: 3rem;
 }
 
 .form-contato p{
@@ -763,6 +746,7 @@ section.Inicio{
 
     .Parceiros .parceirosimg img{
         width: 100%;
+        height: auto;
     }
     
 
