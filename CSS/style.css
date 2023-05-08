@@ -267,12 +267,16 @@ section.Inicio{
     margin-top: -16rem;
 }
 
-.Sobre .content p{
+.Sobre .content .psobre{
     font-size: 1.5rem;
     text-align: justify;
     color: #444;
     padding: 1rem 0;
     line-height: 2;
+}
+
+.Sobre .content .psobre a{
+    color: var(--cor-principal-verde);
 }
 
 .Sobre .content .icons-container{
