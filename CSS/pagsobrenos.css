@@ -278,37 +278,6 @@ section{
     text-align: justify;
     color: #444;
 }
-/* Endereços*/
-.container3 h1{
-    font-size: 3rem;
-    font-weight: var(--fonte-bold);
-    text-align: center;
-    color: var(--cor-principal-verde);
-    margin-top: 5rem;
-}
-
-.container3 h1::after{
-    content: "";
-    position: relative;
-    width: 20%;
-    height: 4px;
-    display: block;
-    margin: 0 auto;
-    background-color: #261608;
-}
-
-.container3 .sobre-labor3 p{
-    margin-top: 35px;
-    font-weight: var(--fonte-medium);
-    font-size: 1.5rem;
-    text-align: justify;
-    color: #444;
-}
-
-.container3 .sobre-labor3 .imagem-sobre3 img{
-    max-width: 100%;
-}
-
 /*footer*/
 .footer{
     background: #0d0d0dd3 ;
@@ -470,9 +439,19 @@ section{
         flex-direction: column;
     }
 
-    .About-lab .image img, .About-lab2 .image-lab img,
-    .About-lab3 .imagem img{
+    .About-lab .image img, .About-lab2 .image-lab img{
         margin-right: 0px;
         margin-bottom: 20px;
+    }
+    
+    .About-lab3 .imagem{
+        flex: 1;
+        margin-left: 5px;
+        overflow: hidden;
+    }
+    .About-lab3 .imagem iframe{
+        display: flex;
+        max-width: 250px;
+        height: 250px;
     }
 }
