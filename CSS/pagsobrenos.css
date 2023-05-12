@@ -156,9 +156,7 @@ section{
 .content{
     flex: 1;
 }
-.content a{
-    color: var(--cor-principal-verde);
-}
+
 .content h2{
     font-size: 3rem;
     font-weight: var(--fonte-bold);
@@ -211,6 +209,10 @@ section{
     color: #444;
 }
 
+.About-lab2 .LAB2 a{
+    color: var(--cor-principal-verde);
+}
+
 .About-lab2 .LAB2 .image-lab img{
     max-width: 100%;
     display: block;
@@ -237,9 +239,9 @@ section{
     overflow: hidden;
 }
 
-.About-lab3 .imagem img{
+.About-lab3 .imagem iframe{
     max-width: 100%;
-    height: auto;
+    height: 400px;
     display: block;
     border-radius: 15px;
 }
