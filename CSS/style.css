@@ -172,10 +172,10 @@ section.Inicio{
     width: 100%;
 }
 
-.manual-nav{
+.manual-nav, .nav-auto{
     position: absolute;
     width: 100%;
-    margin-top: -4%;
+    margin-top: 35%;
     display: flex;
     justify-content: center;
 }
@@ -220,13 +220,7 @@ section.Inicio{
     transition: 0.5s;
 }
 
-.nav-auto{
-    position: absolute;
-    width: 100%;
-    margin-top: 35.4%;
-    display: flex;
-    justify-content: center;
-}
+
 
 .nav-auto div:not(:last-child){
     margin-right: 10px;
@@ -248,7 +242,39 @@ section.Inicio{
     background-color: var(--cor-principal-verde);
 }
 
+.prev,
+.next{
+    width: 12%;
+    height: 100%;
+    position: absolute;
+    top: 30%;
+    z-index: 99;
+    cursor: pointer;
+}
 
+.prev{
+    left: 100px;
+}
+.next{
+    right: 100px;
+}
+.uil-angle-double-left{
+    color: #ffffffa1;
+    font-size: 150px;
+    border-radius: 50;
+}
+
+.uil-angle-double-left:hover{
+    color: var(--cor-principal-verde);
+}
+
+.uil-angle-double-right{
+    color: #ffffffa1;
+    font-size: 150px;
+}
+.uil-angle-double-right:hover{
+    color: var(--cor-principal-verde);
+}
 /*Slides fim*/
 
 .Inicio .content{
@@ -286,6 +312,7 @@ section.Inicio{
 
 .Sobre .box-container .imagem img{
     width: 484px;
+    border-radius: 2rem;
 }
 
 .Sobre .content{
@@ -634,6 +661,8 @@ section.Inicio{
       font-size: 50%;
     }
 
+    
+
     .header{
       padding: 2rem;
     }
@@ -663,6 +692,29 @@ section.Inicio{
 @media (max-width: 772px){
     #menu-btn{
         display: inline-block;
+    }
+
+    .manual-nav, .nav-auto{
+        position: absolute;
+        width: 100%;
+        margin-top: 65%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .prev{
+        left: 50px;
+    }
+    .next{
+        right: 50px;
+    }
+
+    .uil-angle-double-left{
+        font-size: 90px;
+    }
+    
+    .uil-angle-double-right{
+        font-size: 90px;
     }
 
     .Whatsapp{
@@ -738,6 +790,22 @@ section.Inicio{
         padding: 3rem 7rem; 
     }
 
+    .prev{
+        left: 25px;
+    }
+    .next{
+        right: 25px;
+    }
+
+    .uil-angle-double-left{
+        font-size: 50px;
+    }
+    
+    .uil-angle-double-right{
+        font-size: 50px;
+    }
+
+
     .Whatsapp{
         position: fixed;
         width: 139px;
@@ -783,6 +851,4 @@ section.Inicio{
         width: 100%;
         height: auto;
     }
-    
-
 }
