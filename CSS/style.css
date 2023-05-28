@@ -244,54 +244,49 @@ section.Inicio{
 
 .prev,
 .next{
-    width: 12%;
-    height: 100%;
+    width: 10%;
+    height: 20%;
     position: absolute;
-    top: 30%;
+    top: 35%;
     z-index: 99;
     cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.877);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .prev{
-    left: 100px;
+    left: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
 }
+
 .next{
-    right: 100px;
-}
-.uil-angle-double-left{
-    color: #ffffffa1;
-    font-size: 150px;
-    border-radius: 50;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
 }
 
-.uil-angle-double-left:hover{
+.uil-angle-left-b{
     color: var(--cor-principal-verde);
+    font-size: 60px;
 }
 
-.uil-angle-double-right{
-    color: #ffffffa1;
-    font-size: 150px;
+.uil-angle-left-b:hover{
+    color: #025c29;
 }
-.uil-angle-double-right:hover{
+
+.uil-angle-right-b{
     color: var(--cor-principal-verde);
-}
-/*Slides fim*/
-
-.Inicio .content{
-    max-width: 60rem;
-    position: absolute;
+    font-size: 60px;
 }
 
-.Inicio .content h3{
-    color: var(--cor-principal-verde);
-    font-size: 6rem;
-    line-height: 1;
-    font-weight: var(--fonte-bold);
-    margin-top: 50rem;
-    margin-left: 3rem;
-   
+.uil-angle-right-b:hover{
+    color: #025c29;
 }
-
 /*======= Fim =======*/
 
 /*======= Sobre Nós =======*/
@@ -375,7 +370,7 @@ section.Inicio{
 .Analises{
     background: #e6e2e246;
     display: block;
-    padding: 5em;
+    padding: 5rem;
     margin-top: -10rem;
 }
 
@@ -661,8 +656,6 @@ section.Inicio{
       font-size: 50%;
     }
 
-    
-
     .header{
       padding: 2rem;
     }
@@ -703,18 +696,22 @@ section.Inicio{
     }
 
     .prev{
-        left: 50px;
+        left: 40px;
+        width: 40px;
+        height: 40px;
     }
     .next{
-        right: 50px;
+        right: 40px;
+        width: 40px;
+        height: 40px;
     }
 
-    .uil-angle-double-left{
-        font-size: 90px;
+    .uil-angle-left-b{
+        font-size: 20px;
     }
     
-    .uil-angle-double-right{
-        font-size: 90px;
+    .uil-angle-right-b{
+        font-size: 20px;
     }
 
     .Whatsapp{
