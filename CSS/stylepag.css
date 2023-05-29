@@ -72,21 +72,27 @@ section{
 .content{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .box{
     margin-top: 100px;
-    padding: 2rem;
+    padding: 2rem ;
     display: flex;
     flex-direction: column;
+    align-items: center;
+
     gap: 5rem;
 }
+
 .box h1{
     font-size: 30px;
 }
+
 .box p{
-    font-size: 18px;
+    font-size: 15px;
 }
+
 button{
     width: 150px;
     height: 30px;
@@ -96,13 +102,15 @@ button{
     justify-content: center;
     align-items: center;
 }
+
 button a{
     color: #000;
     font-weight: 700;
 }
+
 .content img{
-    width: 50%;
-    height: 50%;
+    width: 40%;
+    height: 40%;
 }
 /*footer*/
 .footer{
