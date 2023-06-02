@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700;800&display=swap');
 :root{
     /*======== Fonte ========*/
-    --fonte: font-family: 'Poppins', sans-serif;
+    --fonte: font-family: 'Poppins', arial, sans-serif;
 
     /*======== Fonte weight ========*/
 
@@ -18,7 +18,7 @@
 }
 
 *{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', arial, sans-serif;
     margin: 0; padding: 0;
     box-sizing: border-box;
     outline: none; border: none;
@@ -117,8 +117,8 @@ section{
 }
 
 .header .nav-logo img{
-    max-width: 85px;
-    height: auto;
+    width: 85px;
+    height: 50px;
 }
 
 
@@ -145,9 +145,9 @@ section.Inicio{
 }
 
 .Inicio .slider{
-    margin: 0 auto;
-    width: 100%;
-    height: auto;
+    margin: 0;
+    width: 100vw;
+    height: 100%;
     overflow: hidden;
 }
 
@@ -165,11 +165,12 @@ section.Inicio{
     width: 25%;
     height: auto;
     position: relative;
-
+    overflow: hidden;
 }
 
 .slide img{
     width: 100%;
+    height: 100%;
 }
 
 .manual-nav, .nav-auto{
@@ -184,7 +185,7 @@ section.Inicio{
     border: 1px solid black;
     padding: 5px;
     border-radius: 50%;
-    cursor:pointer;
+    cursor: pointer;
     transition: 0.5s;
 }
 
@@ -306,7 +307,8 @@ section.Inicio{
 }
 
 .Sobre .box-container .imagem img{
-    width: 484px;
+    width: 400px;
+    height: 480px;
     border-radius: 2rem;
 }
 
@@ -390,6 +392,8 @@ section.Inicio{
 
 .analises-container .boxcard img{
     border-radius: 0.5rem;
+    width: 180px;
+    height: 120px;
     margin: auto;
     margin-top: 0.5rem;
     display: block;
@@ -432,6 +436,8 @@ section.Inicio{
 .analises-container2 .boxcard2 img{
     border-radius: 0.5rem;
     margin: auto;
+    width: 180px;
+    height: 120px;
     margin-top: 0.5rem;
     display: block;
 }
@@ -464,15 +470,20 @@ section.Inicio{
     justify-content: space-evenly;
 }
 
+.parceirosimg .parc{
+    width: 250px;
+}
+
 .Parceiros .parceirosimg img{
     width: 100%;
+    height: 100%;
 }
 
 /*======= Fim =======*/
 
 /*======= contato =======*/
 .contact{
-    background: url(../img/atendimento.png) no-repeat;
+    background: url(../img/atendimento.png)  no-repeat;
     background-position: center center;
     background-size: 100% auto;
 }
@@ -586,6 +597,7 @@ section.Inicio{
 
 .footer .box-container .box img{
     width: 50%;
+    height: 50%;
 }
   
 .footer .box-container .box .links{
@@ -653,9 +665,12 @@ section.Inicio{
 /*======= media queries =======*/
 @media(max-width: 991px){
     html{
-      font-size: 50%;
+      font-size: 60%;
     }
 
+    body{
+        overflow-x: hidden;
+    }
     .header{
       padding: 2rem;
     }
@@ -685,6 +700,10 @@ section.Inicio{
 @media (max-width: 772px){
     #menu-btn{
         display: inline-block;
+    }
+
+    body{
+        overflow-x: hidden;
     }
 
     .manual-nav, .nav-auto{
@@ -751,7 +770,8 @@ section.Inicio{
     }
 
     .Sobre .box-container .imagem img {
-        width: 279px;
+        width: 200px;
+        height: 240px;
         margin-top: 11rem;
         margin-right: 25%;
         margin-bottom: 11rem;
@@ -776,11 +796,19 @@ section.Inicio{
         width: 100%;
         height: 100%;
     }
+    
+    .parceirosimg .parc{
+        width: 100px;
+    }
 }
 
 @media (max-width: 414px){
     html{
-       font-size: 50%;
+       font-size: 55%;
+    }
+
+    body{
+        overflow-x: hidden;
     }
 
     section{ 
@@ -832,11 +860,13 @@ section.Inicio{
     .Sobre .box-container .imagem{
         margin-top: -10rem;
         margin-left: auto;
-        display: block;
+        display: flex;
+        justify-content: center;
     }
 
     .Sobre .box-container .imagem img{
-        width: 100%;
+        width: 200px;
+        height: 240px;
         align-items: center;
     }
 
@@ -844,8 +874,11 @@ section.Inicio{
         margin-top: 5rem;
     }
 
+    .parceirosimg .parc{
+        width: 100px;
+    }
+
     .Parceiros .parceirosimg img{
         width: 100%;
-        height: auto;
-    }
+    }    
 }
